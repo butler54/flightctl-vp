@@ -5,6 +5,7 @@ clusterGroup:
   - open-cluster-management
   - vault
   - golang-external-secrets
+  - flightctl
   subscriptions:
     acm:
       name: advanced-cluster-management
@@ -57,6 +58,11 @@ clusterGroup:
       project: hub
       chart: golang-external-secrets
       chartVersion: 0.1.*
+    # flightctl:
+    #   name: flightctl
+    #   namespace: flightctl
+    #   chart: oci://quay.io/flightctl/charts/flightctl
+
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
