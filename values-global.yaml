@@ -1,6 +1,6 @@
 ---
 global:
-  pattern: multicloud-gitops
+  pattern: flightctl-vp
   options:
     useCSV: false
     syncPolicy: Automatic
